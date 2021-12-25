@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player | CodingNepal</title>
+  
+  <link rel="stylesheet" href="css/player.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <div class="play_right">
+    <h1>My Player</h1>
+    <div class="play_box">
+      <div class="inner_play">
+
+        <div class="round_cover">
+          <img src="img/img1.jpg" alt="album_cover">
+        </div>
+
+        <div class="txt_cover">
+          <h4 class="cover_song">Annabell's Homework</h4>
+          <p class="cover_singer">Alec Benjamin</p>
+        </div>
+
+        <div class="audio_cover">
+          <button class="pre_btn"><span class="material-icons">skip_previous</span></button>
+          <button class="pp_btn"><span class="material-icons" id="playpausebtn">play_arrow</span></button>        
+          <button class="next_btn"><span class="material-icons">skip_next</span></button>
+        </div>
+
+        <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+        <div id="time_box">
+          <span id="curtimetext">00:00</span> <span id="durtimetext">00:00</span>
+        </div>
+
+        <div class="user_cover">
+          <div class="user_con">
+            <img src="img/img12.jpg" alt="d">
+          </div>
+
+          <div class="user_names">
+            userName_1
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/player.js"></script>
+
+</body>
+</html>
